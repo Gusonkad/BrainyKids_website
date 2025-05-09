@@ -69,6 +69,13 @@
     border-radius: 50px;
 }
 
+@font-face {
+    font-family: 'Lemonade Stand';
+    src: url('fonts/LemonadeStand.woff2') format('woff2'),
+         url('fonts/LemonadeStand.woff') format('woff'),
+         url('fonts/LemonadeStand.ttf') format('truetype');
+}
+
 
 /*** Heading ***/
 h1,
@@ -85,19 +92,19 @@ h4,
 .display-4,
 .display-5,
 .display-6 {
-    font-family: 'Baloo', cursive;
-    font-weight: 700;
+    font-family: 'Lemonade Stand', cursive !important;
+    font-weight: 600;
 }
 
 h5,
 h6,
 .h5,
 .h6 {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .font-secondary {
-    font-family: 'Baloo', cursive;
+    font-family: 'Lemonade Stand', cursive !important;
 }
 
 
