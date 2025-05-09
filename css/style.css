@@ -69,12 +69,12 @@
     border-radius: 50px;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Lemonade Stand';
     src: url('fonts/LemonadeStand.woff2') format('woff2'),
          url('fonts/LemonadeStand.woff') format('woff'),
          url('fonts/LemonadeStand.ttf') format('truetype');
-}
+} */
 
 
 /*** Heading ***/
@@ -92,7 +92,7 @@ h4,
 .display-4,
 .display-5,
 .display-6 {
-    font-family: 'Lemonade Stand', cursive !important;
+    font-family: 'Playfair Display', cursive !important;
     font-weight: 600;
 }
 
@@ -104,7 +104,7 @@ h6,
 }
 
 .font-secondary {
-    font-family: 'Lemonade Stand', cursive !important;
+    font-family: 'Playfair Display', cursive !important;
 }
 
 
