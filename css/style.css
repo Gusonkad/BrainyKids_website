@@ -513,7 +513,8 @@ h6,
 
 .footer .copyright .text-bg-copyright:hover,
 .footer .copyright .text-bg-copyright a:hover {
-    color: rgba(255,255,255,0.5) !important;
+    /* color: rgba(255,255,255,0.5) !important; */
+    color: #103741 !important;
 }
 
 .co-fou-text {
@@ -521,4 +522,32 @@ h6,
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
+}
+
+.about-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-list .about-list-item {
+    margin-bottom: 20px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.about-list .about-list-item::before {
+    content: "•";
+    color: #189aaa;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.justify-text {
+    text-align: justify !important;
+}
+
+.text-align-center {
+    text-align: center;
 }

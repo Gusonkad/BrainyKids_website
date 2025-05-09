@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kider - Preschool Website Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainy Kids - Центр дитячого розвитку Вінниця. Підготовка до школи, дошколярик, англійська для дошкільнят, логопед.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -21,6 +22,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -31,6 +33,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+    <script src="js/leave_phone_number.js" defer></script>
 </head>
 
 <body>
@@ -64,7 +70,6 @@
                         <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                             <a href="facility.html" class="dropdown-item">School Facilities</a>
-                            <a href="team.html" class="dropdown-item">Popular Teachers</a>
                             <a href="our-history.html" class="dropdown-item active">Become A Teachers</a>
                             <a href="appointment.html" class="dropdown-item">Make Appointment</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
@@ -157,27 +162,46 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Get In Touch</h3>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <h3 class="text-white mb-4">Зв'язатись з нами</h3>
+                        <p class="mb-2">
+                            <a href="https://www.google.com/maps?q=Пр.+Юності,+14+А,+Вінниця,+Україна" target="_blank" style="text-decoration: none; color: inherit;">
+                                <i class="fa fa-map-marker-alt me-3"></i>Пр. Юності, 14 А, Вінниця, Україна
+                            </a>
+                        </p>                        
+                        <p class="mb-2">
+                            <a href="tel:+380966987178" style="text-decoration: none; color: inherit;">
+                                <i class="fa fa-phone-alt me-3"></i>+38 096 698 71 78
+                            </a>
+                        </p>                        
+                        <p class="mb-2">
+                            <a href="mailto:brainykids.vn@gmail.com" style="text-decoration: none; color: inherit;">
+                                <i class="fa fa-envelope me-3"></i>brainykids.vn@gmail.com
+                            </a>
+                        </p>                        
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" 
+                            href="https://www.instagram.com/brainy_kids_vn?igsh=amp3ODhtYW81ZjB5"><i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" 
+                            href="https://www.facebook.com/share/16Bw61kLCU/"><i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" 
+                            href="https://www.tiktok.com/@.brainy.kids?_t=ZM-8wD4I3RKgsQ&_r=1"><i class="fab fa-tiktok"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" 
+                            href="tel:+380966987178"><i class="fab fa-telegram-plane"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Quick Links</h3>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                        <h3 class="text-white mb-4">Перейти</h3>
+                        <a class="btn btn-link text-white-50" href="about.html">Про нас</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Контакти</a>
+                        <a class="btn btn-link text-white-50" href="facility.html">Напрямки підготовки</a>
+                        <a class="btn btn-link text-white-50" href="appointment.html">Залишити заявку</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Photo Gallery</h3>
+                        <h3 class="text-white mb-4">Фото галерея</h3>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
                                 <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
@@ -200,14 +224,12 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Newsletter</h3>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Your email">
-                            <button type="button"
-                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
+                        <h3 class="text-white mb-4">Залиште номер телефону</h3>
+                        <p>Ми з Вами зв'яжемось.</p>
+                        <div class="position-relative mx-auto">
+                            <input id="phone" class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your phone number">
+                            <button class="btn btn-primary py-2 mt-2" onclick="sendPhoneNumber()">Надіслати</button>
+                        </div>                
                     </div>
                 </div>
             </div>
@@ -215,15 +237,12 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="" href="#">BrainyKids </a>, All Right Reserved.
-                            <i class="text-bg-copyright"> <a href="https://htmlcodex.com">Designed By HTML Codex</a></i>
+                            &copy; <a class="" href="#">BrainyKids </a>, All Right Reserved. 
+							<i class="text-bg-copyright"> <a href="https://htmlcodex.com">Designed By HTML Codex</a></i> 
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="index.html">На головну</a>
                             </div>
                         </div>
                     </div>
