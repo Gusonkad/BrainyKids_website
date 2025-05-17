@@ -558,3 +558,55 @@ h6,
 .text-align-center {
     text-align: center;
 }
+
+/* Popup Modal */
+    .modal-content {
+        background: linear-gradient(135deg, #ffcc00, #189aaa);
+        color: white;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    /* Animated modal entrance */
+    .modal.fade .modal-dialog {
+        transition: transform 0.3s ease-in-out;
+        transform: scale(0.8);
+    }
+
+    .modal.show .modal-dialog {
+        transform: scale(1);
+    }
+
+    /* Bright social icons */
+    .btn-social {
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .btn-social i {
+        color: white;
+    }
+
+    /* Customize colors for each platform */
+    .btn-instagram { background: #E1306C; }
+    .btn-facebook { background: #1877F2; }
+    .btn-tiktok { background: #000000; }
+    .btn-telegram { background: #0088cc; }
+
+    /* Social Icon Hover Animation */
+    .btn-social {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-social:hover {
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+

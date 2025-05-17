@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/BrainyKids-logo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brainy Kids - Центр дитячого розвитку Вінниця. Підготовка до школи, дошколярик, англійська для дошкільнят, логопед.</title>
+    <title>Brainy Kids - Центр дитячого розвитку, Вінниця. Підготовка до школи, дошколярик, англійська для дошкільнят, логопед.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -63,20 +63,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="classes.html" class="nav-item nav-link">Classes</a>
+                    <a href="index.html" class="nav-item nav-link">Головна</a>
+                    <a href="about.html" class="nav-item nav-link">Про нас</a>
+                    <a href="classes.html" class="nav-item nav-link">Заняття</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Меню</a>
                         <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="facility.html" class="dropdown-item">School Facilities</a>
-                            <a href="our-history.html" class="dropdown-item">Become A Teachers</a>
-                            <a href="appointment.html" class="dropdown-item active">Make Appointment</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="facility.html" class="dropdown-item">Наші суперсили</a>
+                            <a href="our-history.html" class="dropdown-item">Наша історія</a>
+                            <a href="appointment.html" class="dropdown-item active">Залишити заявку</a>
+                            <a href="testimonial.html" class="dropdown-item">Відгуки</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <a href="contact.html" class="nav-item nav-link">Контакти</a>
                 </div>
+                <a id="socialModal" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">З нами цікаво<i class="fas fa-share-alt ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -237,7 +238,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="" href="#">BrainyKids </a>, All Right Reserved. 
+                            &copy; <a class="" href="#">BrainyKids </a>, All Right Reserved
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
@@ -255,6 +256,35 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
+        <!-- Social Modal Popup -->
+    <div class="modal fade" id="socialModalPopup" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Підписуйтесь на нас, будемо дружити!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Веселі моменти, корисні поради й новини — у наших соцмережах.</p>
+                    <div class="d-flex justify-content-center pt-2">
+                        <a class="btn btn-social btn-instagram" href="https://www.instagram.com/brainy_kids_vn?igsh=amp3ODhtYW81ZjB5">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-social btn-facebook" href="https://www.facebook.com/share/16Bw61kLCU/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-social btn-tiktok" href="https://www.tiktok.com/@.brainy.kids?_t=ZM-8wD4I3RKgsQ&_r=1">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a class="btn btn-social btn-telegram" href="tel:+380966987178">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -262,6 +292,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/open_modal_popup.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
