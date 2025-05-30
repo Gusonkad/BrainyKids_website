@@ -365,6 +365,10 @@ h6,
     margin-top: -10px;
 }
 
+.classes-item .rounded-circle:hover {
+    background: var(--primary) !important;
+}
+
 
 /*** Team ***/
 .team-item .team-text {

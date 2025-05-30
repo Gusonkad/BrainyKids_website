@@ -13,7 +13,10 @@ const modalMappings = [
     { button: "threeMonthProgramPopupBtn", modal: "threeMonthProgramPopup" },
     { button: "englishProgramPopupBtn", modal: "englishProgramPopup" },
     { button: "eideticsProgramPopupBtn", modal: "eideticsProgramPopup" },
-    { button: "speechTherapistProgramPopupBtn", modal: "speechTherapistProgramPopup" }
+    { button: "speechTherapistProgramPopupBtn", modal: "speechTherapistProgramPopup" },
+    { button: "handwritingProgramPopupBtn", modal: "handwritingProgramPopup" },
+    { button: "speedReadingProgramPopupBtn", modal: "speedReadingProgramPopup" },
+    { button: "multiplicationProgramPopupBtn", modal: "multiplicationProgramPopup" }
 ];
 
 modalMappings.forEach(({ button, modal }) => setupModal(button, modal));
