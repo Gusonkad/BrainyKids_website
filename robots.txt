@@ -1,0 +1,14 @@
+# robots.txt for Brainy Kids website
+
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Allow indexing of all other pages
+Allow: /
+
+# Sitemap location (ensure this file exists!)
+Sitemap: https://yourwebsite.com/sitemap.xml

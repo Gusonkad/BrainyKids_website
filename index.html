@@ -1,25 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/BrainyKids-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/BrainyKids-logo.png">
+
+    <!-- Meta Data -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brainy Kids - Центр дитячого розвитку, Вінниця. Підготовка до школи, дошколярик, англійська для дошкільнят, логопед.</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <meta name="author" content="Brainy Kids - Центр дитячого розвитку">
+    
+    <!-- SEO Meta Tags -->
+    <title>Brainy Kids - Центр дитячого розвитку у Вінниці | Підготовка до школи, англійська, логопед</title>
+    <meta name="description" content="Brainy Kids - професійний центр дитячого розвитку у Вінниці. Підготовка до школи, дошколярик, англійська для дошкільнят, логопед. Записуйтеся вже сьогодні!">
+    <meta name="keywords" content="Brainy Kids, дитячий центр, дошколярик, логопед, англійська, Вінниця, підготовка до школи">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Brainy Kids - Центр дитячого розвитку у Вінниці">
+    <meta property="og:description" content="Підготовка до школи, дошколярик, англійська, логопед. Ваша дитина заслуговує найкраще навчання!">
+    <meta property="og:image" content="img/BrainyKids-logo.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brainy Kids - Центр дитячого розвитку у Вінниці">
+    <meta name="twitter:description" content="Найкраща підготовка до школи, логопед, англійська для дошкільнят у Вінниці">
+    <meta name="twitter:image" content="img/BrainyKids-logo.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -52,32 +68,34 @@
 
 
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0" aria-label="Main Navigation">
             <a href="index.html" class="navbar-brand">
                 <h1 class="m-0 text-primary">
-                    <img class="img-fluid rounded" src="img/BrainyKids-logo.png" alt="BrainyKids-logo">
+                    <img class="img-fluid rounded" src="img/BrainyKids-logo.png" alt="Brainy Kids - Центр дитячого розвитку у Вінниці">
+                    <h2 lang="en" style="display: none;">Welcome to Brainy Kids!</h2>
+                    <h2 lang="uk" style="display: none;">Ласкаво просимо до Brainy Kids!</h2>
                 </h1>
             </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link active">Головна</a>
-                    <a href="about.html" class="nav-item nav-link">Про нас</a>
-                    <a href="classes.html" class="nav-item nav-link">Заняття</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Меню</a>
-                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="facility.html" class="dropdown-item">Наші суперсили</a>
-                            <a href="our-history.html" class="dropdown-item">Наша історія</a>
-                            <a href="appointment.html" class="dropdown-item">Залишити заявку</a>
-                            <a href="testimonial.html" class="dropdown-item">Відгуки</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Контакти</a>
-                </div>
-                <a id="socialModal" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">З нами цікаво<i class="fas fa-share-alt ms-3"></i></a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Головна</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Про нас</a></li>
+                    <li class="nav-item"><a href="classes.html" class="nav-link">Заняття</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Меню</a>
+                        <ul class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <li><a href="facility.html" class="dropdown-item">Наші суперсили</a></li>
+                            <li><a href="our-history.html" class="dropdown-item">Наша історія</a></li>
+                            <li><a href="appointment.html" class="dropdown-item">Залишити заявку</a></li>
+                            <li><a href="testimonial.html" class="dropdown-item">Відгуки</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Контакти</a></li>
+                </ul>
+                <a id="socialModal" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">З нами цікаво <i class="fas fa-share-alt ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -85,47 +103,49 @@
 
         <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5">
-            <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel header-carousel position-relative" aria-label="Brainy Kids Highlights">
                 <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="BrainyKids-slider1">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Brainy Kids - Центр дитячого розвитку у Вінниці">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);" role="region" aria-label="Brainy Kids Introduction">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Brainy Kids<br/><p class="display-4">Центр дитячого розвитку</p></h1>
+                                    <h2 class="display-4" style="display: none;">Центр дитячого розвитку у Вінниці</h2>
                                     <p class="fs-5 fw-medium text-white mb-4 pb-2">Це сучасний центр розвитку дітей у Вінниці, створений для малюків віком 4–6 років</p>
-                                    <a href="classes.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft" style="margin-bottom: .375rem;">Дізнатись більше</a>
+                                    <a href="classes.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Дізнатись більше</a>
                                     <a href="appointment.html" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Записатись на курс</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="BrainyKids-slider2">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Освітні програми для дітей у Brainy Kids">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);" role="region" aria-label="Brainy Kids Education Programs">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Подбайте про майбутнє своєї дитини сьогодні</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Ми віримо, що кожна дитина унікальна й має безмежний потенціал</p>
-                                    <a href="classes.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft" style="margin-bottom: .375rem;">Дізнатись більше</a>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Кожна дитина унікальна та має безмежний потенціал</p>
+                                    <a href="classes.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Дізнатись більше</a>
                                     <a href="appointment.html" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Записатись на курс</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="BrainyKids-slider3">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Brainy Kids - Професійні педагоги у Вінниці">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);" role="region" aria-label="Brainy Kids Professional Teachers">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Команда професійних педагогів</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Наша команда професійних педагогів створює теплу й творчу атмосферу, де діти навчаються, 
-                                        розкривають свої таланти та готуються до шкільного життя із задоволенням</p>
-                                    <a href="classes.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft" style="margin-bottom: .375rem;">Дізнатись більше</a>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Створюємо теплу й творчу атмосферу, де діти розкривають свої таланти та готуються до школи</p>
+                                    <a href="classes.html" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Дізнатись більше</a>
                                     <a href="appointment.html" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Записатись на курс</a>
                                 </div>
                             </div>
@@ -146,13 +166,13 @@
                         Завдяки індивідуальному підходу кожна дитина в BrainyKids розвиває самостійність, критичне мислення та навички комунікації.
                     </p>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" role="region" aria-label="Brainy Kids Facilities">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a href="facility.html" class="text-decoration-none">
                             <div class="facility-item">
                                 <div class="facility-icon bg-primary">
                                     <span class="bg-primary"></span>
-                                    <i class="fa fa-solid fa-users fa-3x text-primary"></i>
+                                    <i class="fa fa-solid fa-users fa-3x text-primary" aria-hidden="true"></i>
                                     <span class="bg-primary"></span>
                                 </div>
                                 <div class="facility-text bg-primary">
@@ -167,7 +187,7 @@
                             <div class="facility-item">
                                 <div class="facility-icon bg-success">
                                     <span class="bg-success"></span>
-                                    <i class="fa fa-solid fa-hand-holding-heart fa-3x text-success"></i>
+                                    <i class="fa fa-solid fa-hand-holding-heart fa-3x text-success" aria-hidden="true"></i>
                                     <span class="bg-success"></span>
                                 </div>
                                 <div class="facility-text bg-success">
@@ -182,7 +202,7 @@
                             <div class="facility-item">
                                 <div class="facility-icon bg-warning">
                                     <span class="bg-warning"></span>
-                                    <i class="fa fa-solid fa-user-graduate fa-3x text-warning"></i>
+                                    <i class="fa fa-solid fa-user-graduate fa-3x text-warning" aria-hidden="true"></i>
                                     <span class="bg-warning"></span>
                                 </div>
                                 <div class="facility-text bg-warning">
@@ -197,7 +217,7 @@
                             <div class="facility-item">
                                 <div class="facility-icon bg-info">
                                     <span class="bg-info"></span>
-                                    <i class="fa fa-solid fa-icons fa-3x text-info"></i>
+                                    <i class="fa fa-solid fa-icons fa-3x text-info" aria-hidden="true"></i>
                                     <span class="bg-info"></span>
                                 </div>
                                 <div class="facility-text bg-info">
@@ -216,29 +236,28 @@
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="row g-5 align-items-center">
+                <div class="row g-5 align-items-center" role="region" aria-label="Про Brainy Kids">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="mb-4">Дізнайтеся більше про наш центр розвитку, нашу роботу, наших фахівців</h1>
                         <p>Центр розпочав свою роботу у травні 2024 року за такими основними напрямками:</p>
                         <p class="mb-4">Річна програма "Підготовка до школи" включає в себе наші програми власної розробки по розвитку мовлення та навчання грамоти, 
                             розвиток елементарних математичних уявлень, розвиток пізнавальних процесів...
                         </p>
-                        <p class="mb-4">Курс для дітей за 2 роки до школи...
-                        </p>
-                        <p class="mb-4">Англійська для Супергероїв 4-6років...
-                        </p>
+                        <p class="mb-4">Курс для дітей за 2 роки до школи...</p>
+                        <p class="mb-4">Англійська для Супергероїв 4-6 років...</p>
+                        
                         <div class="row g-4 align-items-center">
                             <div class="col-sm-6" style="flex: 0 0 auto; width: 40%;">
                                 <a class="btn btn-primary rounded-pill py-3 px-5" href="about.html">Більше...</a>
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle flex-shrink-0" src="img/user_1.jpg" alt="" style="width: 45px; height: 45px;">
+                                    <img class="rounded-circle flex-shrink-0" src="img/user_1.jpg" alt="Лілія Гусонька - Co-founder & Викладач" style="width: 45px; height: 45px;">
                                     <div class="ms-3">
                                         <h6 class="text-primary mb-1">Лілія <br>Гусонька</h6>
                                         <small class="co-fou-text">Co-founder & Викладач</small>
                                     </div>
-                                    <img class="rounded-circle flex-shrink-0" src="img/user_2.jpg" alt="" style="width: 45px; height: 45px;">
+                                    <img class="rounded-circle flex-shrink-0" src="img/user_2.jpg" alt="Оксана Затоковенко - Co-founder & Викладач" style="width: 45px; height: 45px;">
                                     <div class="ms-3">
                                         <h6 class="text-primary mb-1">Оксана <br>Затоковенко</h6>
                                         <small class="co-fou-text">Co-founder & Викладач</small>
@@ -247,16 +266,17 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/about-1.jpg" alt="">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/about-1.jpg" alt="Brainy Kids - Центр дитячого розвитку">
                             </div>
                             <div class="col-6 text-start" style="margin-top: -150px;">
-                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-2.jpg" alt="">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-2.jpg" alt="Діти на заняттях у Brainy Kids">
                             </div>
                             <div class="col-6 text-end" style="margin-top: -150px;">
-                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-3.jpg" alt="">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-3.jpg" alt="Викладачі Brainy Kids з дітьми">
                             </div>
                         </div>
                     </div>
@@ -269,11 +289,11 @@
         <!-- Our-history Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="bg-light rounded">
+                <div class="bg-light rounded" role="region" aria-label="Our History at Brainy Kids">
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/our-history_1.jpg" style="object-fit: cover;">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/our-history_1.jpg" alt="Brainy Kids - Наша історія" style="object-fit: cover;">
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -283,9 +303,9 @@
                                     об’єднаних спільною пристрастю – любов’ю до дітей та вірою в їх безмежний потенціал.
                                     Ліля, вихователька з багаторічним досвідом, присвятила своє життя створенню затишної 
                                     та розвиваючої атмосфери для малюків. Її мудрість, терпіння та глибоке розуміння дитячої 
-                                    психології надихали всіх навколо.                                    
+                                    психології надихали всіх навколо.
                                 </p>
-                                <a class="btn btn-primary py-3 px-5" href="our-history.html">Читати далі<i class="fa fa-arrow-right ms-2"></i></a>
+                                <a class="btn btn-primary py-3 px-5" href="our-history.html" aria-label="Read more about our history">Читати далі<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -301,17 +321,17 @@
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Заняття та напрями</h1>
                     <p>Не втрачайте важливий час перед школою! Забезпечте своїй дитині міцний 
-                            фундамент знань та впевненість у власних силах. Записуйтеся на один із наших курсів вже сьогодні, 
-                            і ваша дитина з радістю переступить поріг першого класу.</p>
+                        фундамент знань та впевненість у власних силах. Записуйтеся на один із наших курсів вже сьогодні, 
+                        і ваша дитина з радістю переступить поріг першого класу.</p>
                     <div class="d-flex justify-content-center p-2" data-wow-delay="0.3s">
-                        <a class="btn btn-primary px-5 py-3" href="classes.html">Більше про заняття...</a>
+                        <a class="btn btn-primary px-5 py-3" href="classes.html" aria-label="Дізнатися більше про заняття">Більше про заняття...</a>
                     </div>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" role="region" aria-label="Brainy Kids Classes">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="">
+                                <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="Brainy Kids - Підготовка до школи">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
                                 <a class="d-block text-center h3 mt-3 mb-4">Підготовка до школи <br>
@@ -321,7 +341,7 @@
                                     <div class="d-flex align-items-center flex-wrap text-center text-md-start">
                                         <!-- User 1 -->
                                         <div class="d-flex align-items-center mb-3 me-md-4">
-                                            <img class="rounded-circle flex-shrink-0" src="img/user_1.jpg" alt="" style="margin: 0.5rem; width: 45px; height: 45px;">
+                                            <img class="rounded-circle flex-shrink-0" src="img/user_1.jpg" alt="Лілія Гусонька - Викладач" style="margin: 0.5rem; width: 45px; height: 45px;">
                                             <div class="ms-2">
                                                 <h6 class="text-primary mb-1">Лілія <br>Гусонька</h6>
                                                 <small class="co-fou-text">Викладач</small>
@@ -330,7 +350,7 @@
 
                                         <!-- User 2 -->
                                         <div class="d-flex align-items-center mb-3">
-                                            <img class="rounded-circle flex-shrink-0" src="img/user_2.jpg" alt="" style="margin: 0.5rem; width: 45px; height: 45px;">
+                                            <img class="rounded-circle flex-shrink-0" src="img/user_2.jpg" alt="Оксана Затоковенко - Викладач" style="margin: 0.5rem; width: 45px; height: 45px;">
                                             <div class="ms-2">
                                                 <h6 class="text-primary mb-1">Оксана <br>Затоковенко</h6>
                                                 <small class="co-fou-text">Викладач</small>
@@ -365,7 +385,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
+                                <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="Brainy Kids - Підготовка до школи (2 роки до школи)">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
                                 <a class="d-block text-center h3 mt-3 mb-4">Підготовка до школи <br>
@@ -375,7 +395,7 @@
                                     <div class="d-flex align-items-center flex-wrap text-center text-md-start">
                                         <!-- User 1 -->
                                         <div class="d-flex align-items-center mb-3 me-md-4">
-                                            <img class="rounded-circle flex-shrink-0" src="img/user_1.jpg" alt="" style="margin: 0.5rem; width: 45px; height: 45px;">
+                                            <img class="rounded-circle flex-shrink-0" src="img/user_1.jpg" alt="Лілія Гусонька - Викладач" style="margin: 0.5rem; width: 45px; height: 45px;">
                                             <div class="ms-2">
                                                 <h6 class="text-primary mb-1">Лілія <br>Гусонька</h6>
                                                 <small class="co-fou-text">Викладач</small>
@@ -384,7 +404,7 @@
 
                                         <!-- User 2 -->
                                         <div class="d-flex align-items-center mb-3">
-                                            <img class="rounded-circle flex-shrink-0" src="img/user_2.jpg" alt="" style="margin: 0.5rem; width: 45px; height: 45px;">
+                                            <img class="rounded-circle flex-shrink-0" src="img/user_2.jpg" alt="Оксана Затоковенко - Викладач" style="margin: 0.5rem; width: 45px; height: 45px;">
                                             <div class="ms-2">
                                                 <h6 class="text-primary mb-1">Оксана <br>Затоковенко</h6>
                                                 <small class="co-fou-text">Викладач</small>
@@ -419,7 +439,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-3.jpg" alt="">
+                                <img class="img-fluid rounded-circle" src="img/classes-3.jpg" alt="Brainy Kids - Експрес-курс (3 місяці до школи)">
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
                                 <a class="d-block text-center h3 mt-3 mb-4">Експрес-курс <br>
@@ -429,7 +449,7 @@
                                     <div class="d-flex align-items-center flex-wrap text-center text-md-start">
                                         <!-- User 1 -->
                                         <div class="d-flex align-items-center mb-3 me-md-4">
-                                            <img class="rounded-circle flex-shrink-0" src="img/user_1.jpg" alt="" style="margin: 0.5rem; width: 45px; height: 45px;">
+                                            <img class="rounded-circle flex-shrink-0" src="img/user_1.jpg" alt="Лілія Гусонька - Викладач" style="margin: 0.5rem; width: 45px; height: 45px;">
                                             <div class="ms-2">
                                                 <h6 class="text-primary mb-1">Лілія <br>Гусонька</h6>
                                                 <small class="co-fou-text">Викладач</small>
@@ -438,7 +458,7 @@
 
                                         <!-- User 2 -->
                                         <div class="d-flex align-items-center mb-3">
-                                            <img class="rounded-circle flex-shrink-0" src="img/user_2.jpg" alt="" style="margin: 0.5rem; width: 45px; height: 45px;">
+                                            <img class="rounded-circle flex-shrink-0" src="img/user_2.jpg" alt="Оксана Затоковенко - Викладач" style="margin: 0.5rem; width: 45px; height: 45px;">
                                             <div class="ms-2">
                                                 <h6 class="text-primary mb-1">Оксана <br>Затоковенко</h6>
                                                 <small class="co-fou-text">Викладач</small>
@@ -486,38 +506,41 @@
                         Кожна історія — це маленька перемога на шляху до великих знань!
                     </p>
                 </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s" role="region" aria-label="Відгуки клієнтів">
                     <div class="testimonial-item bg-light rounded p-5">
                         <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
                         <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" alt="Відгук клієнта 1" style="width: 90px; height: 90px;">
                             <div class="ps-3">
                                 <h3 class="mb-1">Client Name</h3>
                                 <span>Profession</span>
                             </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex" aria-hidden="true"></i>
                         </div>
                     </div>
+
                     <div class="testimonial-item bg-light rounded p-5">
                         <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
                         <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" alt="Відгук клієнта 2" style="width: 90px; height: 90px;">
                             <div class="ps-3">
                                 <h3 class="mb-1">Client Name</h3>
                                 <span>Profession</span>
                             </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex" aria-hidden="true"></i>
                         </div>
                     </div>
+
                     <div class="testimonial-item bg-light rounded p-5">
                         <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
                         <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" alt="Відгук клієнта 3" style="width: 90px; height: 90px;">
                             <div class="ps-3">
                                 <h3 class="mb-1">Client Name</h3>
                                 <span>Profession</span>
                             </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -533,33 +556,25 @@
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Зв'язатись з нами</h3>
                         <p class="mb-2">
-                            <a href="https://www.google.com/maps?q=Пр.+Юності,+14+А,+Вінниця,+Україна" target="_blank" style="text-decoration: none; color: inherit;">
+                            <a href="https://www.google.com/maps?q=Пр.+Юності,+14+А,+Вінниця,+Україна" target="_blank" aria-label="Локація Brainy Kids у Вінниці" style="text-decoration: none; color: inherit;">
                                 <i class="fa fa-map-marker-alt me-3"></i>Пр. Юності, 14 А, Вінниця, Україна
                             </a>
                         </p>                        
                         <p class="mb-2">
-                            <a href="tel:+380966987178" style="text-decoration: none; color: inherit;">
+                            <a href="tel:+380966987178" aria-label="Зателефонувати до Brainy Kids" style="text-decoration: none; color: inherit;">
                                 <i class="fa fa-phone-alt me-3"></i>+38 096 698 71 78
                             </a>
                         </p>                        
                         <p class="mb-2">
-                            <a href="mailto:brainykids.vn@gmail.com" style="text-decoration: none; color: inherit;">
+                            <a href="mailto:brainykids.vn@gmail.com" aria-label="Написати на email Brainy Kids" style="text-decoration: none; color: inherit;">
                                 <i class="fa fa-envelope me-3"></i>brainykids.vn@gmail.com
                             </a>
                         </p>                        
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" 
-                            href="https://www.instagram.com/brainy_kids_vn?igsh=amp3ODhtYW81ZjB5"><i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-outline-light btn-social" 
-                            href="https://www.facebook.com/share/16Bw61kLCU/"><i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="btn btn-outline-light btn-social" 
-                            href="https://www.tiktok.com/@.brainy.kids?_t=ZM-8wD4I3RKgsQ&_r=1"><i class="fab fa-tiktok"></i>
-                            </a>
-                            <a class="btn btn-outline-light btn-social" 
-                            href="https://telegram.im/@brainykids_vn"><i class="fab fa-telegram-plane"></i>
-                            </a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/brainy_kids_vn" aria-label="Instagram Brainy Kids"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/16Bw61kLCU/" aria-label="Facebook Brainy Kids"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.tiktok.com/@.brainy.kids" aria-label="TikTok Brainy Kids"><i class="fab fa-tiktok"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://telegram.im/@brainykids_vn" aria-label="Telegram Brainy Kids"><i class="fab fa-telegram-plane"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -571,7 +586,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Фото галерея</h3>
-                        <div class="row g-2 pt-2">
+                        <div class="row g-2 pt-2" role="region" aria-label="Фото галерея Brainy Kids" style="cursor: pointer;">
                             <div class="col-4">
                                 <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-1.jpg" onclick="openModal(0)" alt="Brainy Kids/gallery_01">
                             </div>
@@ -605,23 +620,9 @@
                         <h3 class="text-white mb-4">Залиште номер телефону</h3>
                         <p>Ми з Вами зв'яжемось.</p>
                         <div class="position-relative mx-auto">
-                            <input id="phone" class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your phone number">
+                            <input id="phone" class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Ваш номер телефону">
                             <button class="btn btn-primary py-2 mt-2" onclick="sendPhoneNumber()">Надіслати</button>
                         </div>                
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="" href="#">BrainyKids </a>, All Right Reserved
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="index.html">На головну</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
