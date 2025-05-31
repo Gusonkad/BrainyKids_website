@@ -360,7 +360,7 @@ h6,
 .responsive-image {
   width: 100%;
   max-width: 700px;
-  min-height: 30vh; /* At least 30% of viewport height */
+  min-height: 60vh; /* At least 30% of viewport height */
   height: auto;
   /* object-fit: contain; */
 }
