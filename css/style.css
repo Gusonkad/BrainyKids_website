@@ -356,6 +356,17 @@ h6,
 }
 
 
+/*** Appointment ***/
+.responsive-image {
+  width: 100%;
+  max-width: 700px;
+  min-height: 30vh; /* At least 30% of viewport height */
+  height: auto;
+  /* object-fit: contain; */
+}
+
+
+
 /*** Classes ***/
 .classes-item {
     transition: .5s;
@@ -367,28 +378,6 @@ h6,
 
 .classes-item .rounded-circle:hover {
     background: var(--primary) !important;
-}
-
-
-/*** Team ***/
-.team-item .team-text {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #FFFFFF;
-    border: 17px solid var(--light);
-    border-radius: 250px;
-    transition: .5s;
-}
-
-.team-item:hover .team-text {
-    border-color: var(--primary);
 }
 
 
