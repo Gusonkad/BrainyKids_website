@@ -360,7 +360,7 @@ h6,
 .responsive-image {
   width: 100%;
   max-width: 700px;
-  min-height: 60vh; /* At least 30% of viewport height */
+  min-height: 60vh; /* At least 60% of viewport height */
   height: auto;
   /* object-fit: contain; */
 }
@@ -602,4 +602,74 @@ h6,
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
+
+   /* Modal for Full Image Gallery */
+    .footer-image-modal {
+        z-index: 10;
+        display: none;
+        position: fixed;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        width: 500px;
+        height: 500px;
+        background: linear-gradient(135deg, #189aaa, #ffcc00);
+        border-radius: 12px;
+        text-align: center;
+        padding: 50px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 0.3s ease-in-out forwards;
+    }
+
+    .footer-image-modal .modal-content {
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+        border-radius: 12px;
+        opacity: 0;
+        animation: scaleUp 0.4s ease-in-out forwards;
+
+    }
+
+    /* BIG Close Button */
+    .footer-image-modal .close {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        font-size: 60px;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .footer-image-modal .close:hover {
+        transform: scale(1.2);
+    }
+
+    /* Arrows Styling */
+    .footer-image-modal .arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 50px;
+        color: white;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        transform: translateY(-50%);
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .footer-image-modal .arrow.left { left: 10px; }
+    .footer-image-modal .arrow.right { right: 10px; }
+
+    /* Hover Effects */
+    .footer-image-modal .arrow:hover {
+        opacity: 0.8;
+        transform: translateY(-50%) scale(1.2);
+    }
+
+    /* Fade-in effect for smooth display */
+    @keyframes scaleUp {
+        0% { opacity: 0; transform: scale(0.6); }
+        100% { opacity: 1; transform: scale(1); }
+    }
 

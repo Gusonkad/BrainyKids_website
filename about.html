@@ -279,22 +279,31 @@
                         <h3 class="text-white mb-4">Фото галерея</h3>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-1.jpg" onclick="openModal(0)" alt="Brainy Kids/gallery_01">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-2.jpg" onclick="openModal(1)" alt="Brainy Kids/gallery_02">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-3.jpg" onclick="openModal(2)" alt="Brainy Kids/gallery_03">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-4.jpg" onclick="openModal(3)" alt="Brainy Kids/gallery_04">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-5.jpg" onclick="openModal(4)" alt="Brainy Kids/gallery_05">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-6.jpg" onclick="openModal(5)" alt="Brainy Kids/gallery_06">
+                            </div>
+                            <div class="col-4" style="visibility: hidden;">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-7.jpg" onclick="openModal(6)" alt="Brainy Kids/gallery_07">
+                            </div>
+                            <div class="col-4" style="visibility: hidden;">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-8.jpg" onclick="openModal(7)" alt="Brainy Kids/gallery_08">
+                            </div>
+                            <div class="col-4" style="visibility: hidden;">
+                                <img class="img-fluid rounded bg-light p-1 footer-galery-item" src="img/classes-9.jpg" onclick="openModal(8)" alt="Brainy Kids/gallery_09">
                             </div>
                         </div>
                     </div>
@@ -359,6 +368,14 @@
         </div>
     </div>
 
+    <!-- Modal for Full Image Size -->
+    <div id="footerImageModal" class="footer-image-modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <button class="arrow left" onclick="prevImage()">❮</button>
+        <img id="fullImage" class="modal-content">
+        <button class="arrow right" onclick="nextImage()">❯</button>
+    </div>
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -367,6 +384,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/open_modal_popup.js"></script>
+    <script src="js/footer_gallery_popup.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
