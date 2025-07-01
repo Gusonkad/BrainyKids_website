@@ -575,6 +575,7 @@ h6,
   box-shadow: 0 2px 8px rgba(23, 162, 184, 0.15);
   align-items: center;
   display: flex;
+  flex-direction: row !important;
 }
 
 .testimonial-photo-wrapper {
