@@ -541,7 +541,7 @@ h6,
     inset 0 -4px 10px rgba(23, 162, 184, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 600px;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -635,6 +635,7 @@ h6,
     height: auto; 
     padding: 25px 30px;
     max-width: 100%;
+    min-height: 370px !important;
   }
 
   .testimonial-text {
@@ -646,6 +647,7 @@ h6,
     flex-direction: column;
     text-align: center;
     padding: 15px 10px;
+    margin-top: 2rem;
   }
 
   .testimonial-info {
@@ -664,9 +666,17 @@ h6,
 }
 
 @media (max-width: 480px) {
+  .testimonial-item-modern {
+    min-height: 350px !important;
+    }
+
   .testimonial-text {
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+    .testimonial-footer {
+    margin-top: 3rem;
   }
 
   .testimonial-name {
