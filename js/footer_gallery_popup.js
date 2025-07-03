@@ -22,3 +22,31 @@ function nextImage() {
     currentIndex = (currentIndex < srcList.length - 1) ? currentIndex + 1 : 0;
     document.getElementById("fullImage").src = srcList[currentIndex];
 }
+
+// Add swipes
+let startX = 0;
+let endX = 0;
+
+const modal = document.getElementById("footerImageModal");
+
+modal.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+modal.addEventListener("touchend", (e) => {
+  endX = e.changedTouches[0].clientX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const threshold = 50;
+  const diff = startX - endX;
+
+  if (Math.abs(diff) > threshold) {
+    if (diff > 0) {
+      nextImage();
+    } else {
+      prevImage();
+    }
+  }
+}
