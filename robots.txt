@@ -10,5 +10,4 @@ Disallow: /checkout/
 # Allow indexing of all other pages
 Allow: /
 
-# Sitemap location (ensure this file exists!)
-Sitemap: https://yourwebsite.com/sitemap.xml
+Sitemap: https://brainykids.com.ua/sitemap.xml
