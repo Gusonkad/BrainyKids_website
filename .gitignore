@@ -1,0 +1,13 @@
+# Ignore config files
+config.php
+.env
+/php/config.php
+
+# Ignore credentials
+*.key
+*.pem
+
+# Ignore cache, logs, temp files
+*.log
+*.cache
+tmp/

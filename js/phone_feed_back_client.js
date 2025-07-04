@@ -11,19 +11,25 @@ function sendPhoneNumber() {
     return;
   }
 
-  fetch("/send", {
+  fetch("/php/send_phone_number.php", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ phone })
   })
-    .then((res) => res.json())
-    .then((data) => {
+  .then(res => res.json())
+  .then(data => {
+    if (data.message) {
       showFeedback(`✅ ${data.message}`, "success");
       phoneInput.value = "";
-    })
-    .catch(() => {
-      showFeedback("⚠️ Не вдалося відправити. Спробуйте пізніше.", "error");
-    });
+    } else if (data.error) {
+      showFeedback(`❌ ${data.error}`, "error");
+    } else {
+      showFeedback("⚠️ Неочікувана відповідь сервера.", "error");
+    }
+  })
+  .catch(() => {
+    showFeedback("⚠️ Не вдалося відправити. Спробуйте пізніше.", "error");
+  });
 }
 
 function showFeedback(message, type) {
