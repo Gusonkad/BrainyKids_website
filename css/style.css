@@ -733,6 +733,29 @@ h6,
     inset 0 -4px 10px rgba(156, 39, 176, 0.2);
 }
 
+.testimonial-style-link {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    background-color: transparent;
+    border: none;
+  }
+
+.testimonial-style-link span{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+.testimonial-style-link:hover {
+    color: #103741;
+    font-size: 17px;
+    box-shadow: 0 4px 20px var(--primary);
+    border-radius: 45px;
+  }
+
+
 
 
 /*** Footer ***/
@@ -1030,3 +1053,5 @@ h6,
         pointer-events: none;
         transition: opacity 1s ease;
         }
+
+
