@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit('Access denied');
 }
 
-if (!$gname || !$gmail || !$cname || !$cage || $cphone) {
+if (!$gname || !$gmail || !$cname || !$cage || !$cphone) {
     http_response_code(400);
     echo json_encode(["error" => "Заповніть всі обовʼязкові поля!"]);
     exit;
@@ -37,8 +37,8 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    // $mail->SMTPDebug = 2; //for debug
-    // $mail->Debugoutput = 'error_log'; //for debug
+    $mail->SMTPDebug = 2; //for debug
+    $mail->Debugoutput = 'error_log'; //for debug
     $mail->Host = $config['email_host'];
     $mail->SMTPAuth = true;
     $mail->Username = $config['email_username'];

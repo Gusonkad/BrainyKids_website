@@ -48,7 +48,7 @@ function sendApplication() {
   }
 
   if (!cphone) {
-    showAppFeedback("❌ Введіть вік дитини", "error");
+    showAppFeedback("❌ Введіть номер телефону", "error");
     return;
   } else if (!/^\+?\d{9,15}$/.test(cphone)) {
     showAppFeedback("❌ Неправильний формат номера телефону.", "error");
