@@ -1,7 +1,7 @@
 function sendContactForm() {
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
-  const subject = document.getElementById("subject").value.trim();
+  const cphone = document.getElementById("cphone").value.trim();
   const message = document.getElementById("message").value.trim();
 
     if (!name) {
@@ -26,25 +26,23 @@ function sendContactForm() {
     }
     }
 
-    if (!subject) {
-    showAppFeedback("❌ Введіть тему звернення", "error");
-    return;
-    } else {
-    if (subject.length > 50) {
-      showAppFeedback("❌ Тема не може містити більше ніж 50 символів", "error");
+    if (!cphone) {
+      showAppFeedback("❌ Введіть вік дитини", "error");
+      return;
+    } else if (!/^\+?\d{9,15}$/.test(cphone)) {
+      showAppFeedback("❌ Неправильний формат номера телефону.", "error");
       return;
     }
-    }
 
-  if (message.length > 1000) {
-    showAppFeedback("❌ Повідомлення не може містити більше ніж 1000 символів", "error");
-    return;
-  }
+    if (message.length > 1000) {
+      showAppFeedback("❌ Повідомлення не може містити більше ніж 1000 символів", "error");
+      return;
+    }
 
 fetch("/php/send_contact_form.php", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ name, email, subject, message }),
+  body: JSON.stringify({ name, email, cphone, message }),
 })
   .then((res) => {
     // console.log("HTTP статус:", res.status);

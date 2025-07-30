@@ -17,7 +17,7 @@ $input = json_decode(file_get_contents("php://input"), true);
 
 $name = trim($input['name'] ?? '');
 $email = trim($input['email'] ?? '');
-$subject = trim($input['subject'] ?? '');
+$cphone = trim($input['cphone'] ?? '');
 $message = trim($input['message'] ?? '');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit('Access denied');
 }
 
-if (!$name || !$email || !$subject) {
+if (!$name || !$email || !$cphone) {
     http_response_code(400);
     echo json_encode(["error" => "Заповніть всі обовʼязкові поля!"]);
     exit;
@@ -56,7 +56,7 @@ try {
     <table style='border-collapse: collapse;'>
         <tr><td style='font-weight:bold;padding:6px; white-space: nowrap;'>👤 Ім'я користувача:</td><td style='padding:6px; margin-left: 6px'>" . htmlspecialchars($name) . "</td></tr>
         <tr><td style='font-weight:bold;padding:6px; white-space: nowrap;'>✉️ Email:</td><td style='padding:6px; margin-left: 6px'>" . htmlspecialchars($email) . "</td></tr>
-        <tr><td style='font-weight:bold;padding:6px; white-space: nowrap;'>📬 Тема звернення:</td><td style='padding:6px; margin-left: 6px'>" . htmlspecialchars($subject) . "</td></tr>
+        <tr><td style='font-weight:bold;padding:6px; white-space: nowrap;'>📞 Номер телефону:</td><td style='padding:6px; margin-left: 6px'>" . htmlspecialchars($cphone) . "</td></tr>
         <tr><td style='font-weight:bold;padding:6px;vertical-align:top; white-space: nowrap;'>💬 Повідомлення:</td><td style='padding:6px; margin-left: 6px'>" . nl2br(htmlspecialchars($message)) . "</td></tr>
     </table>
     <hr style='margin:20px 0;border:none;border-top:1px solid #ccc;'>

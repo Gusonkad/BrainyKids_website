@@ -3,6 +3,7 @@ function sendApplication() {
   const gmail = document.getElementById("gmail").value.trim();
   const cname = document.getElementById("cname").value.trim();
   const cage = document.getElementById("cage").value.trim();
+  const cphone = document.getElementById("cphone").value.trim();
   const message = document.getElementById("message").value.trim();
 
     if (!gname) {
@@ -46,6 +47,14 @@ function sendApplication() {
     return;
   }
 
+  if (!cphone) {
+    showAppFeedback("❌ Введіть вік дитини", "error");
+    return;
+  } else if (!/^\+?\d{9,15}$/.test(cphone)) {
+    showAppFeedback("❌ Неправильний формат номера телефону.", "error");
+    return;
+  }
+
   if (message.length > 1000) {
     showAppFeedback("❌ Повідомлення не може містити більше ніж 1000 символів", "error");
     return;
@@ -54,7 +63,7 @@ function sendApplication() {
 fetch("/php/send_application.php", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ gname, gmail, cname, cage, message }),
+  body: JSON.stringify({ gname, gmail, cname, cage, cphone, message }),
 })
   .then((res) => {
     // console.log("HTTP статус:", res.status);

@@ -19,6 +19,7 @@ $gname = trim($input['gname'] ?? '');
 $gmail = trim($input['gmail'] ?? '');
 $cname = trim($input['cname'] ?? '');
 $cage  = trim($input['cage'] ?? '');
+$cphone  = trim($input['cphone'] ?? '');
 $message = trim($input['message'] ?? '');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -26,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit('Access denied');
 }
 
-if (!$gname || !$gmail || !$cname || !$cage) {
+if (!$gname || !$gmail || !$cname || !$cage || $cphone) {
     http_response_code(400);
     echo json_encode(["error" => "Заповніть всі обовʼязкові поля!"]);
     exit;
@@ -59,6 +60,7 @@ try {
         <tr><td style='font-weight:bold;padding:6px; white-space: nowrap;'>✉️ Email:</td><td style='padding:6px; margin-left: 6px'>" . htmlspecialchars($gmail) . "</td></tr>
         <tr><td style='font-weight:bold;padding:6px; white-space: nowrap;'>👧 Імʼя дитини:</td><td style='padding:6px; margin-left: 6px'>" . htmlspecialchars($cname) . "</td></tr>
         <tr><td style='font-weight:bold;padding:6px; white-space: nowrap;'>🔢 Вік дитини:</td><td style='padding:6px; margin-left: 6px'>" . htmlspecialchars($cage) . "</td></tr>
+        <tr><td style='font-weight:bold;padding:6px; white-space: nowrap;'>📞 Номер телефону:</td><td style='padding:6px; margin-left: 6px'>" . htmlspecialchars($cphone) . "</td></tr>
         <tr><td style='font-weight:bold;padding:6px;vertical-align:top; white-space: nowrap;'>💬 Повідомлення:</td><td style='padding:6px; margin-left: 6px'>" . nl2br(htmlspecialchars($message)) . "</td></tr>
     </table>
     <hr style='margin:20px 0;border:none;border-top:1px solid #ccc;'>
